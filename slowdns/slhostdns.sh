@@ -7,8 +7,8 @@ apt install jq curl -y
 rm -rf /root/nsdomain
 rm nsdomain
 
-sub=$(</dev/urandom tr -dc a-z0-9 | head -c5)
-subsl=$(</dev/urandom tr -dc a-x0-9 | head -c5)
+sub=$(</dev/urandom tr -dc a-z0-9 | head -c2)
+subsl=$(</dev/urandom tr -dc a-x0-9 | head -c2)
 DOMAIN=warungawan.my.id
 SUB_DOMAIN=vip-${sub}.warungawan.my.id
 NS_DOMAIN=dns-${subsl}.warungawan.my.id
