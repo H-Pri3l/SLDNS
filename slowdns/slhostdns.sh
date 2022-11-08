@@ -6,11 +6,13 @@ MYIP=$(wget -qO- icanhazip.com);
 apt install jq curl -y
 rm -rf /root/nsdomain
 rm nsdomain
+#Domain
+domain=$(cat /etc/xray/domain)
 
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c2)
 subsl=$(</dev/urandom tr -dc a-x0-9 | head -c2)
-DOMAIN=warungawan.my.id
-SUB_DOMAIN=vip-${sub}.warungawan.my.id
+DOMAINN=warungawan.my.id
+SUB_DOMAIN=${domain}
 NS_DOMAIN=dns-${subsl}.warungawan.my.id
 CF_ID=akrnawan25@gmail.com
 CF_KEY=9e2ffa0ac14915a576c8eac49fd5dcd7485f7
