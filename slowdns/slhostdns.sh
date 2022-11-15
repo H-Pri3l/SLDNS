@@ -10,7 +10,7 @@ rm nsdomain
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c2)
 subsl=$(</dev/urandom tr -dc a-x0-9 | head -c2)
 DOMAIN=warungawan.my.id
-SUB_DOMAIN=vvip-${sub}.warungawan.my.id
+SUB_DOMAIN=vip-${sub}.warungawan.my.id
 NS_DOMAIN=dns-${subsl}.warungawan.my.id
 CF_ID=akrnawan25@gmail.com
 CF_KEY=9e2ffa0ac14915a576c8eac49fd5dcd7485f7
